@@ -14,8 +14,7 @@ def homepage():
 #resume page
 @app.route("/Resume")
 def resume():
-    workingdir = os.path.abspath(os.getcwd())
-    filepath = workingdir + '/static/files/'
+    filepath = '/static/files/'
     return send_from_directory(filepath, 'LiamAulphResume.pdf')
 
 #transcript page
