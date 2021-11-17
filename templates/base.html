@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+            <!-- Toggle button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+        
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a type="button" href="http://127.0.0.1:5000/"class="btn btn-primary">Home</a>
+                </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Projects
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="http://127.0.0.1:5000/Stock%20Analyzer">Stock Analyzer</a>
+                          <a class="dropdown-item" href="http://127.0.0.1:5000/Statistics%20Calculator">Statistics Calculator</a>
+                        </div>
+                    </div>
+                </ul>
+                <br>
+                <br>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" style="margin-left: 15px;">
+                        <a type="button" href="http://127.0.0.1:5000/Resume"class="btn btn-primary">Resume</a>
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" style="margin-left: 15px;">
+                        <a type="button" href="http://127.0.0.1:5000/Transcript"class="btn btn-primary">Transcript</a>
+                    </li>
+                </ul>
+                <!-- Navbar dropdown -->
+
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+    </body>
+    {% block content %}
+    {% endblock %}
+</html>
+
+
+
